@@ -1,0 +1,459 @@
+{
+	"info": {
+		"_postman_id": "4de0d5a8-187f-48d7-bc2d-e3d2ffb3d1a6",
+		"name": "EcomTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23916858"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "All",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/products?sort=best_sell&per_page=20",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"products"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "best_sell"
+								},
+								{
+									"key": "sort",
+									"value": "top_rated",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "price_high_to_low",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "price_low_to_high",
+									"disabled": true
+								},
+								{
+									"key": "per_page",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/products?sort=best_sell&per_page=20",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"products"
+									],
+									"query": [
+										{
+											"key": "sort",
+											"value": "best_sell"
+										},
+										{
+											"key": "sort",
+											"value": "top_rated",
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": "price_high_to_low",
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": "price_low_to_high",
+											"disabled": true
+										},
+										{
+											"key": "per_page",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 02 Jul 2024 14:26:14 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Success\",\n    \"data\": {\n        \"data\": [\n            {\n                \"id\": 5,\n                \"name\": \"Et voluptate maiores odit nobis est ut.\",\n                \"slug\": \"et-voluptate-maiores-odit-nobis-est-ut\",\n                \"price\": \"3151.86\",\n                \"reviews_avg_rating\": null,\n                \"order_details_count\": 5\n            },\n            {\n                \"id\": 116,\n                \"name\": \"Et odit est iusto ea.\",\n                \"slug\": \"et-odit-est-iusto-ea\",\n                \"price\": \"673.76\",\n                \"reviews_avg_rating\": null,\n                \"order_details_count\": 4\n            },\n            {\n                \"id\": 9,\n                \"name\": \"Voluptate esse voluptate non quasi voluptatem.\",\n                \"slug\": \"voluptate-esse-voluptate-non-quasi-voluptatem\",\n                \"price\": \"4747.55\",\n                \"reviews_avg_rating\": null,\n                \"order_details_count\": 4\n            },\n            {\n                \"id\": 59,\n                \"name\": \"Suscipit non dolores consequatur.\",\n                \"slug\": \"suscipit-non-dolores-consequatur\",\n                \"price\": \"4546.87\",\n                \"reviews_avg_rating\": null,\n                \"order_details_count\": 4\n            },\n            {\n                \"id\": 82,\n                \"name\": \"Id odio molestiae consequatur saepe.\",\n                \"slug\": \"id-odio-molestiae-consequatur-saepe\",\n                \"price\": \"9018.56\",\n                \"reviews_avg_rating\": null,\n                \"order_details_count\": 4\n            },\n            {\n                \"id\": 133,\n                \"name\": \"Veritatis corrupti necessitatibus laborum molestiae et eveniet.\",\n                \"slug\": \"veritatis-corrupti-necessitatibus-laborum-molestiae-et-eveniet\",\n                \"price\": \"6216.88\",\n                \"reviews_avg_rating\": null,\n                \"order_details_count\": 3\n            },\n            {\n                \"id\": 128,\n                \"name\": \"Voluptatem omnis nobis explicabo optio expedita eius.\",\n                \"slug\": \"voluptatem-omnis-nobis-explicabo-optio-expedita-eius\",\n                \"price\": \"2919.64\",\n                \"reviews_avg_rating\": null,\n                \"order_details_count\": 3\n            },\n            {\n                \"id\": 69,\n                \"name\": \"Asperiores dolorem asperiores molestiae et repellendus.\",\n                \"slug\": \"asperiores-dolorem-asperiores-molestiae-et-repellendus\",\n                \"price\": \"3382.18\",\n                \"reviews_avg_rating\": null,\n                \"order_details_count\": 3\n            },\n            {\n                \"id\": 126,\n                \"name\": \"Quas officiis quia asperiores voluptates.\",\n                \"slug\": \"quas-officiis-quia-asperiores-voluptates\",\n                \"price\": \"5632.98\",\n                \"reviews_avg_rating\": null,\n                \"order_details_count\": 3\n            },\n            {\n                \"id\": 22,\n                \"name\": \"Dolorem dolorum maxime aut eos id.\",\n                \"slug\": \"dolorem-dolorum-maxime-aut-eos-id\",\n                \"price\": \"6004.42\",\n                \"reviews_avg_rating\": null,\n                \"order_details_count\": 3\n            },\n            {\n                \"id\": 35,\n                \"name\": \"Expedita eos voluptatum ut inventore veritatis vitae.\",\n                \"slug\": \"expedita-eos-voluptatum-ut-inventore-veritatis-vitae\",\n                \"price\": \"7247.54\",\n                \"reviews_avg_rating\": null,\n                \"order_details_count\": 3\n            },\n            {\n                \"id\": 47,\n                \"name\": \"Veritatis earum eaque impedit et magni repellendus eos.\",\n                \"slug\": \"veritatis-earum-eaque-impedit-et-magni-repellendus-eos\",\n                \"price\": \"9809.12\",\n                \"reviews_avg_rating\": null,\n                \"order_details_count\": 3\n            },\n            {\n                \"id\": 64,\n                \"name\": \"Possimus aliquam officiis aperiam sit.\",\n                \"slug\": \"possimus-aliquam-officiis-aperiam-sit\",\n                \"price\": \"6138.84\",\n                \"reviews_avg_rating\": null,\n                \"order_details_count\": 3\n            },\n            {\n                \"id\": 163,\n                \"name\": \"Nemo officia eos eos id consequuntur.\",\n                \"slug\": \"nemo-officia-eos-eos-id-consequuntur\",\n                \"price\": \"1113.07\",\n                \"reviews_avg_rating\": null,\n                \"order_details_count\": 3\n            },\n            {\n                \"id\": 106,\n                \"name\": \"Dolorem possimus et earum aut voluptas quaerat.\",\n                \"slug\": \"dolorem-possimus-et-earum-aut-voluptas-quaerat\",\n                \"price\": \"3331.77\",\n                \"reviews_avg_rating\": null,\n                \"order_details_count\": 3\n            },\n            {\n                \"id\": 36,\n                \"name\": \"Cupiditate et odio et numquam voluptate.\",\n                \"slug\": \"cupiditate-et-odio-et-numquam-voluptate\",\n                \"price\": \"2808.32\",\n                \"reviews_avg_rating\": null,\n                \"order_details_count\": 3\n            },\n            {\n                \"id\": 184,\n                \"name\": \"Ipsum nesciunt itaque molestiae.\",\n                \"slug\": \"ipsum-nesciunt-itaque-molestiae\",\n                \"price\": \"2430.63\",\n                \"reviews_avg_rating\": null,\n                \"order_details_count\": 3\n            },\n            {\n                \"id\": 173,\n                \"name\": \"Quia distinctio molestiae ut.\",\n                \"slug\": \"quia-distinctio-molestiae-ut\",\n                \"price\": \"1913.08\",\n                \"reviews_avg_rating\": null,\n                \"order_details_count\": 3\n            },\n            {\n                \"id\": 31,\n                \"name\": \"Enim est alias qui ut id laudantium quasi eos.\",\n                \"slug\": \"enim-est-alias-qui-ut-id-laudantium-quasi-eos\",\n                \"price\": \"8327.10\",\n                \"reviews_avg_rating\": null,\n                \"order_details_count\": 2\n            },\n            {\n                \"id\": 7,\n                \"name\": \"Explicabo et et velit minima dolore quasi.\",\n                \"slug\": \"explicabo-et-et-velit-minima-dolore-quasi\",\n                \"price\": \"5041.36\",\n                \"reviews_avg_rating\": null,\n                \"order_details_count\": 2\n            }\n        ],\n        \"links\": {\n            \"first\": \"http://127.0.0.1:8000/api/products?page=1\",\n            \"last\": \"http://127.0.0.1:8000/api/products?page=10\",\n            \"prev\": null,\n            \"next\": \"http://127.0.0.1:8000/api/products?page=2\"\n        },\n        \"meta\": {\n            \"current_page\": 1,\n            \"from\": 1,\n            \"last_page\": 10,\n            \"path\": \"http://127.0.0.1:8000/api/products\",\n            \"per_page\": 20,\n            \"to\": 20,\n            \"total\": 200\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Example Product\",\n    \"price\": 2000.99,\n    \"categories\": [2, 3, 6]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/products",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success Store",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Example Product\",\n    \"price\": 2000.99,\n    \"categories\": [2, 3, 6]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/products",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 02 Jul 2024 14:47:53 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product created successfully.\"\n}"
+						},
+						{
+							"name": "Failed Store",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Another Example Product \",\n    \"price\": 2000.99,\n    \"categories\": [2, \"b\", 6]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/products",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 02 Jul 2024 14:49:09 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The categories.1 field must be an integer.\",\n    \"errors\": {\n        \"categories.1\": [\n            \"The categories.1 field must be an integer.\"\n        ]\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Home",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Home",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}",
+							"host": [
+								"{{url}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 02 Jul 2024 13:51:00 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6Ik1xSmtiMXgzUWlrck9mU1pUdnBZblE9PSIsInZhbHVlIjoiVTIraXBVMlBNbkxEVy9YN1doS1F4djVBbmRiUHVOYnJ2MVJ6ODAwR2JsMDk2Y2Qza0IxdnF4QzlsYkRmTkNZV29XeTZuREVBUnNyM05rd0FHNGtEWTUyNlF5VlJTL0RFYm1BT0FCZEQ3eEcydE1wWUdwK1cxV3h0Y2h5VkFVNnkiLCJtYWMiOiIyN2VhMzc5NjRkMDVhYTJkZWU2MzgxYjhjYzM5MmVjOWZlMmZmZmM2MTNkYzc2OThmYmRhZDAxZTliYTJhNjZhIiwidGFnIjoiIn0%3D; expires=Tue, 02 Jul 2024 15:51:00 GMT; Max-Age=7200; path=/; samesite=lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6InlPWENnOXpxbExsamZGblRlTERvNXc9PSIsInZhbHVlIjoib1N2dEtZZWhTeThVaGYzY0QyTzJKYXRjNGhCS2pwN015c0svWjBYT3ZkVlRGV0o4eFE0bDRyNmk3b1o2WEFnL3BSY1FGTFhaN2NiY2YvRU9ZQW40ZERhVFpsYlp3YkxFdnIvNnFlb3cydzdseE9EMytscFhMU2d3RE40STJTMUQiLCJtYWMiOiJlMGZiZTUzMGE0NmE5YzUyZmQ4YzAxZDBhYzBlMTgyNjdhNjExOTZjNGI2NWNlMzhjYjc1MjMwMTBmOGI1ZjEyIiwidGFnIjoiIn0%3D; expires=Tue, 02 Jul 2024 15:51:00 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Hello Test!\"\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		}
+	]
+}
