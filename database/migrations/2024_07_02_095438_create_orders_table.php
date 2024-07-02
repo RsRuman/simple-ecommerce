@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->decimal('grand_total', 10, 2);
             $table->decimal('shipping_cost', 10, 2);
-            $table->decimal('discount', 10, 2);
+            $table->decimal('discount', 10, 2)->default(0);
             $table->foreignId('user_id')->constrained('users');
             $table->timestamps();
         });
